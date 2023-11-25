@@ -1,0 +1,51 @@
+# ASP.NET Core
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+build/
+bower_components/
+
+# NuGet Packages
+*.nuget.props
+*.lock
+*.paket
+*.paket.props
+*.paket.targets
+*.ps1
+packages/
+*.nupkg
+/wwwroot/lib/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Rider files
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.DS_Store
+
+# ASP.NET Core Files
+obj/
+bin/
+*.csproj.user
+*.xproj
+project.lock.json
+npm-debug.log
