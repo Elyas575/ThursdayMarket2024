@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThursdayMarket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86e51769b24795814abcf8fabac4729f69d10b6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThursdayMarket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThursdayMarket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

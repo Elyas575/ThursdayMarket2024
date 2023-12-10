@@ -13,6 +13,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThursdayMarket.DataAccess\ThursdayMarket.DataAccess.csproj" />
+    <ProjectReference Include="..\ThursdayMarket.Models\ThursdayMarket.Models.csproj" />
+    <ProjectReference Include="..\ThursdayMarket.Utils\ThursdayMarket.Utils.csproj" />
   </ItemGroup>
 
 </Project>
