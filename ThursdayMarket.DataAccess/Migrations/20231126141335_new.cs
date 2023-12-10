@@ -5,39 +5,35 @@
 namespace ThursdayMarket.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class isDeletedCategory : Migration
+    public partial class @new : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "Name",
-                table: "Categories",
-                type: "nvarchar(80)",
-                maxLength: 80,
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
-
-            migrationBuilder.AddColumn<bool>(
+            migrationBuilder.RenameColumn(
                 name: "isDeleted",
                 table: "Categories",
+                newName: "IsDeleted");
+
+            migrationBuilder.AddColumn<bool>(
+                name: "IsDeleted",
+                table: "Products",
                 type: "bit",
                 nullable: false,
                 defaultValue: false);
 
             migrationBuilder.UpdateData(
-                table: "Categories",
+                table: "Products",
                 keyColumn: "Id",
                 keyValue: 1,
-                column: "isDeleted",
+                column: "IsDeleted",
                 value: false);
 
             migrationBuilder.UpdateData(
-                table: "Categories",
+                table: "Products",
                 keyColumn: "Id",
                 keyValue: 2,
-                column: "isDeleted",
+                column: "IsDeleted",
                 value: false);
         }
 
@@ -45,17 +41,13 @@ namespace ThursdayMarket.DataAccess.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "isDeleted",
-                table: "Categories");
+                name: "IsDeleted",
+                table: "Products");
 
-            migrationBuilder.AlterColumn<string>(
-                name: "Name",
+            migrationBuilder.RenameColumn(
+                name: "IsDeleted",
                 table: "Categories",
-                type: "nvarchar(max)",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "nvarchar(80)",
-                oldMaxLength: 80);
+                newName: "isDeleted");
         }
     }
 }

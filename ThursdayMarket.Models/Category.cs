@@ -11,6 +11,8 @@ namespace ThursdayMarket.Models
         public string Name { get; set; }
         [Range(1, 10000)]
         public int DisplayOrder { get; set; }
-        public bool isDeleted { get; set; }
+        public bool IsDeleted { get; set; }
+
+     
     }
 }
